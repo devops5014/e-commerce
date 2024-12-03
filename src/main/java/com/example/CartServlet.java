@@ -26,8 +26,10 @@ public class CartServlet extends HttpServlet {
         String productName = request.getParameter("productName");
         String productDescription = request.getParameter("productDescription");
         double productPrice = Double.parseDouble(request.getParameter("productPrice"));
+        String productCategory = request.getParameter("productCategory");
+        String productImage = request.getParameter("productImage");
 
-        Product product = new Product(productId, productName, productDescription, productPrice);
+        Product product = new Product(productId, productName, productDescription, productPrice, productCategory, productImage);
         cart.add(product);
 
         response.sendRedirect("products");

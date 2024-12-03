@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f8f9fa;
     color: #333;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 button {
-    background-color: #28a745;
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 10px;
@@ -26,5 +26,18 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #0056b3;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
